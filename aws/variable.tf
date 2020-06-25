@@ -45,3 +45,15 @@ variable "bastion_instance_type" {
   type = string
   default = "t2.micro"
 }
+
+variable "ec2_instance_type" {
+  type = string
+  default = "t3.medium"
+}
+
+variable "ec2_instances" {
+   type = map
+   default = {
+     node01 = "us-east-1a"
+   }
+}
